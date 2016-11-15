@@ -25,5 +25,5 @@ ez_json('http://my.url/file.php', success, fail);
 
 ### Request while sending JSON data
 ```javascript
-ez_json('http://my.url/file.php', success, fail);
+ez_json('http://my.url/file.php', {a: 1}, success, fail);
 ```
