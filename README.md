@@ -4,12 +4,12 @@ Minimal vanilla-js POST library for JSON.
 You're probably only using this because I told you to.
 
 ```javascript
-ez-json(url, [data], success, fail);
+ez-json(url [,data] ,success [,fail]);
 
   url: The path to the API
   data: (optional) JSON formatted object with data
-  success: function to run on success, json response as parameter
-  fail: function to run on fail, error string as parameter
+  success: function to run on success, returns json response
+  fail: (optional) function to run on fail, returns error string
 ```
 
 ## Usage
