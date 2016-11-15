@@ -1,0 +1,17 @@
+<html>
+<head>
+<script src="../ez-json.js"></script>
+</head>
+<body>
+<script>
+  ez_json('http://localhost/test/index.php',
+    function(data) {
+      console.log(data);
+    },
+    function(error) {
+      console.log(error);
+    }
+  )
+</script>
+</body>
+</html>

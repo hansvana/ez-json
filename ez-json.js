@@ -1,13 +1,13 @@
-function ez-json(url, data, success, fail) {
+function ez_json(url, data, success, fail) {
 
-  var reqType = POST;
+  var reqType = 'POST';
 
   // shift arguments if no data, thanks jQuery!
   if (typeof data === 'function') {
     fail = success || undefined;
     success = data;
     data = undefined;
-    reqType = GET;
+    reqType = 'GET';
   }
 
   var request = new XMLHttpRequest();
@@ -28,5 +28,7 @@ function ez-json(url, data, success, fail) {
     fail("There was a connection error");
   };
 
-  request.send();
+  request.send(
+    reqType === 'POST' ? json.stringify(data) : null;
+  );
 }

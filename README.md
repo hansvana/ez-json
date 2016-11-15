@@ -8,7 +8,7 @@ ez-json(url, [data], success, fail);
 
   url: The path to the API
   data: (optional) JSON formatted object with data
-  succes: function to run on success, json response as parameter
+  success: function to run on success, json response as parameter
   fail: function to run on fail, error string as parameter
 ```
 
